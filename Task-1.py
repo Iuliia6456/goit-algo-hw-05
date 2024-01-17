@@ -10,7 +10,7 @@ class HashTable:
         key_hash = self.hash_function(key)
         key_value = [key, value]
 
-        if self.table[key_hash] is None:
+        if not self.table[key_hash]:
             self.table[key_hash] = list([key_value])
             return True
         else:
@@ -34,8 +34,8 @@ class HashTable:
         if self.table[key_hash] is None:
             return False
         else:
-            for i in range(0, len(self.table[key_hash])):
-                if self.table[key_hash][i][0] == key:
+            for i, pair in enumerate(self.table[key_hash]):
+                if pair[0] == key:
                     del self.table[key_hash][i]
                     return True
             return False
