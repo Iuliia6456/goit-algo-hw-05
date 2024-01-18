@@ -2,7 +2,7 @@ import timeit
 from tabulate import tabulate, SEPARATING_LINE
 
 from boyer_moore import boyer_moore_search
-from knuth_morris_patt import kmp_search
+from knuth_morris_pratt import kmp_search
 from rabin_karp import rabin_karp_search
 
 
