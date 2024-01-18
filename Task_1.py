@@ -45,8 +45,8 @@ H.insert("apple", 10)
 H.insert("orange", 20)
 H.insert("banana", 30)
 
-print(f"\nTable before deletion: {H.table}\n")
+print(f"\nTable before deletion 'apple': {H.table}\n")
 
 H.delete("apple")
 
-print(f"Table after deletion: {H.table}\n")
+print(f"Table after deletion 'apple': {H.table}\n")

@@ -30,7 +30,6 @@ x = 0.5
 
 result = binary_search(array, x)
 
-
 print(f"\nNumber of iterations: {result[0]}\n")
 print(f"Upper limit: {result[1]}\n")
 
