@@ -29,7 +29,8 @@ array = [0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5]
 x = 0.5
 
 result = binary_search(array, x)
+print(result)
 
-print(f"\nNumber of iterations: {result[0]}\n")
+print(f"\nNumber of iterations: {result[0]}")
 print(f"Upper limit: {result[1]}\n")
 

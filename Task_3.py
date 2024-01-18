@@ -38,11 +38,19 @@ def benchmark_search_algorithms(text, real_pattern, fake_pattern):
 
     return(tabulate(table, headers, tablefmt="simple"))
 
-text = read_file('goit-algo-hw-05/article1.txt')
+text = read_file('article1.txt')
 real_pattern = "public static int linearSearch"
 fake_pattern = "fake"
 
+text_2 = read_file('article2.txt')
+real_pattern_2 = "Editors Ricci F"
+fake_pattern_2 = "fake"
+
+print("\nARTICLE 1")
 print(benchmark_search_algorithms(text, real_pattern, fake_pattern))
-print("""\nConclusion:\n\n- Boyer-Moore is faster than KMP and Rabin-Karp 
-- KMP is faster than Rabin-Karp
-- real search is faster than fake\n""")
+print("\nARTICLE 2")
+print(benchmark_search_algorithms(text_2, real_pattern_2, fake_pattern_2))
+
+
+
+
